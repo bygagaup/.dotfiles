@@ -1,0 +1,10 @@
+# Add to .bashrc
+#
+# if [ -f "$HOME/.proxy_env" ]; then
+#   source "$HOME/.proxy_env"
+# fi
+export http_proxy="http://127.0.0.1:12334"
+export https_proxy="http://127.0.0.1:12334"
+export ftp_proxy="http://127.0.0.1:12334"
+export ALL_PROXY="socks5://127.0.0.1:12334"
+export no_proxy="localhost,127.0.0.1"
