@@ -1,6 +1,5 @@
 {
   "position": "top",
-  // Убираем отступы, чтобы бар прилегал к краям экрана
   "margin-top": 0,
   "margin-left": 0,
   "margin-right": 0,
@@ -50,20 +49,19 @@
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "cpu": {
-    "format": " {usage}%",
+    "format": "󰍛 {usage}%",
     "tooltip": false
   },
   "memory": {
-    "format": "{}% "
+    "format": "󰘚 {}%"
   },
   "temperature": {
     "critical-threshold": 80,
     "format": "{icon} {temperatureC}°C",
-    // Исправленные иконки (Font Awesome / Nerd Font)
     "format-icons": [
-      "", // холодно
-      "", // нормально
-      "" // горячо
+      "",
+      "",
+      ""
     ]
   },
   "battery": {
@@ -71,11 +69,10 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon}  {capacity}%",
-    "format-full": "{icon}  {capacity}%",
-    "format-charging": "  {capacity}%",
-    "format-plugged": "  {capacity}%",
-    "format-alt": "{time}  {icon}",
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
     "format-icons": [
       "",
       "",
@@ -86,22 +83,22 @@
   },
   "network": {
     "format-wifi": "  {signalStrength}%",
-    "format-ethernet": " {cidr}",
-    "format-linked": "{ifname} (No IP)",
-    "format-disconnected": "⚠",
+    "format-ethernet": "󰈀 {cidr}",
+    "format-linked": "󰈀 No IP",
+    "format-disconnected": "󰖪",
     "tooltip-format": "{ifname} via {gwaddr}",
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
-    "format-muted": "",
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟",
     "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
+      "headphone": "󰋋",
+      "hands-free": "󰋎",
+      "headset": "󰋎",
+      "phone": "󰄜",
+      "portable": "󰄜",
+      "car": "󰄋",
       "default": [
         "",
         "",
